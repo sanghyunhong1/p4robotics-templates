@@ -1,7 +1,7 @@
 #!/bin/bash
 repo=$(git remote -v | head -n 1 | awk '{print $2}')
 if [ -z "$repo" ]; then
-    echo "Try using cd to move into your ROB599 directory"
+    echo "Try using cd to move into your ROB502 directory"
     exit 1
 fi
 
@@ -15,4 +15,4 @@ fi
 
 problem=$1
 
-curl -X PUT "anodes.eecs.umich.edu:8599/submit?repo=$repo&pset=$pset&problem=$problem"
+curl -X PUT "rob502.eecs.umich.edu:8599/submit?repo=$repo&pset=$pset&problem=$problem"
