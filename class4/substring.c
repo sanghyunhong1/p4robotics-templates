@@ -24,5 +24,7 @@ int main(int argc, char **argv) {
     // but fread just reads the file as binary, so we add it ourselves
     file_buffer[bytes_read] = '\0';
 
+    // ADD YOUR CODES HERE
+    
     return 0;
 }
