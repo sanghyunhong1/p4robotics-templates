@@ -27,7 +27,7 @@ tst_node_t *tst_node_create(char c) {
 }
 
 void tst_node_destroy(tst_node_t *node) {
-
+    // USE RECURSION
 }
 
 tst_t *tst_create(void) {
@@ -68,6 +68,7 @@ int main(int argc, char **argv) {
 
     tst_t *tst = tst_create();
 
+    //--- BUILDING TST WITH DICTIONARY
     char str_buffer[WORD_MAX_LEN];
     while (1) {
         int ret = fscanf(f, "%255s", str_buffer);
@@ -78,6 +79,7 @@ int main(int argc, char **argv) {
     }
     fclose(f);
 
+    //--- BUILDING TST DEBUGGING ---
     // tst_add(tst, "the");
     // tst_add(tst, "tea");
     // tst_add(tst, "that");
